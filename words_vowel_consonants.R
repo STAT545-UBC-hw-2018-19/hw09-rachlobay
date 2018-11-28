@@ -1,3 +1,4 @@
+# words vowels consonants table for makefile
 words <- readLines("words.txt")
 
 vowels = stringr::str_count(words, "[aeiou]")
