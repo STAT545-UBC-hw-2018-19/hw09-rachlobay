@@ -9,7 +9,7 @@ output.dot: Makefile makefile2dot.py
 	./makefile2dot.py < $< >$@
 
 clean:
-	rm -f words.txt histogram.tsv histogram.png report.md report.html words_vowels.tsv words_vowels.png words_consonants.tsv words_consonants.png vowels_consonants_report.md vowels_cosonants_report.html output.dot output.png
+	rm -f words.txt histogram.tsv histogram.png report.md report.html words_vowels.tsv words_vowels.png words_consonants.tsv words_consonants.png vowels_consonants_report.md vowels_consonants_report.html output.dot output.png
 
 report.html: report.rmd histogram.tsv histogram.png
 	Rscript -e 'rmarkdown::render("$<")'
