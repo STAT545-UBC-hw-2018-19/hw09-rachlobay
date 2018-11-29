@@ -34,6 +34,8 @@ Finally, the following commands should work. The make clean command should take 
 
 ![*Fig. 1* Graph of my pipeline for this homework](output.png)
 
+Note that there is a section in the graph for this output.png file that comes from makefile2dot.py and Makefile. This makes sense because when you change the Makefile, this output.png file should be updated to reflect those changes. 
+
 ## What I changed and added to the original pipeline
 
 ### R script
